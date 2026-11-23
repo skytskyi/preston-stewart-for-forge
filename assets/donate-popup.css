@@ -151,3 +151,68 @@ html.dp-lock, html.dp-lock body { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .dp-modal, .dp-modal .dp-dialog { transition: none; }
 }
+
+/* ---------- SWIFT details popup (Figma: Donations — DP style / Payment=Swift, 1858:10733) ---------- */
+.dp-modal .dp-swift-body { display: flex; flex-direction: column; gap: 24px; }
+.dp-modal .dp-details { display: flex; flex-direction: column; gap: 24px; margin: 0; padding: 0; }
+.dp-modal .dp-detail { display: flex; align-items: center; gap: 24px; margin: 0; }
+.dp-modal .dp-detail__text { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 2px; margin: 0; }
+.dp-modal .dp-detail__label { margin: 0; font-size: 15px; font-weight: 400; line-height: 1.2; color: var(--dp-text); }
+.dp-modal .dp-detail__value {
+  margin: 0; font-size: 16px; font-weight: 700; line-height: 1.25; color: var(--dp-text);
+  overflow-wrap: anywhere;
+}
+.dp-modal .dp-copy {
+  position: relative; flex: 0 0 48px; width: 48px; height: 48px; padding: 6.5px; margin: 0;
+  display: grid; place-items: center;
+  background: transparent; border: 0; border-radius: 12px; cursor: pointer; color: var(--dp-ink);
+}
+.dp-modal .dp-copy:hover, .dp-modal .dp-copy:focus { background: transparent; color: var(--dp-ink); }
+.dp-modal .dp-copy__face {
+  width: 35px; height: 35px; display: grid; place-items: center;
+  background: #fff; border: 1px solid var(--dp-line); border-radius: 11.5px;
+  transition: border-color .15s ease, background-color .15s ease;
+}
+.dp-modal .dp-copy:hover .dp-copy__face { border-color: var(--dp-ink); }
+.dp-modal .dp-copy:focus-visible { outline: none; }
+.dp-modal .dp-copy:focus-visible .dp-copy__face { outline: 2px solid var(--dp-ink); outline-offset: 2px; }
+.dp-modal .dp-copy svg { width: 18px; height: 18px; }
+.dp-modal .dp-copy .dp-copy__done { display: none; }
+.dp-modal .dp-copy.is-copied .dp-copy__icon { display: none; }
+.dp-modal .dp-copy.is-copied .dp-copy__done { display: block; }
+.dp-modal .dp-copy.is-copied .dp-copy__face { background: var(--dp-ink); border-color: var(--dp-ink); color: #fff; }
+.dp-modal .dp-copy__tip {
+  position: absolute; bottom: calc(100% - 2px); left: 50%; transform: translate(-50%, 4px);
+  padding: 4px 8px; border-radius: 6px; background: var(--dp-ink); color: #fff;
+  font: 500 12px/1.2 var(--dp-body); white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity .15s ease, transform .15s ease;
+}
+.dp-modal .dp-copy.is-copied .dp-copy__tip { opacity: 1; transform: translate(-50%, 0); }
+.dp-modal .dp-sr-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 600px) {
+  .dp-modal .dp-detail { gap: 12px; }
+  .dp-modal .dp-details, .dp-modal .dp-swift-body { gap: 20px; }
+  .dp-modal [data-swift-iban] { font-size: clamp(13px, 3.6vw, 15px); letter-spacing: 0; }
+}
+
+/* ---------- Secondary Button / Big (Figma 355:2388) — used for SWIFT and Crypto ---------- */
+.elementor-widget-button .elementor-button.dp-btn-secondary {
+  display: inline-flex !important; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; min-height: 60px; padding: 16px 32px !important;
+  background: #fff !important; border: 1px solid #55161a !important; border-radius: 8px !important;
+  color: #55161a !important; fill: #55161a !important;
+  font-family: "T1Robit", "T1 Robit", sans-serif !important; font-size: 18px !important;
+  font-weight: 400 !important; line-height: normal !important; letter-spacing: 1.8px !important;
+  text-transform: none !important; box-shadow: none !important; transform: none !important;
+  transition: color .15s ease, border-color .15s ease !important;
+}
+.elementor-widget-button .elementor-button.dp-btn-secondary:hover,
+.elementor-widget-button .elementor-button.dp-btn-secondary:focus { color: #6e383b !important; border-color: #6e383b !important; background: #fff !important; }
+.elementor-widget-button .elementor-button.dp-btn-secondary:active { color: #3d0f12 !important; border-color: #3d0f12 !important; }
+.elementor-widget-button .elementor-button.dp-btn-secondary:focus-visible { outline: 2px solid #55161a; outline-offset: 2px; }
+.elementor-widget-button .elementor-button.dp-btn-secondary .elementor-button-text,
+.elementor-widget-button .elementor-button.dp-btn-secondary .elementor-button-content-wrapper {
+  color: inherit !important; font: inherit !important; letter-spacing: inherit !important; text-transform: none !important;
+}
+.elementor-widget-button .elementor-button.dp-btn-secondary .elementor-button-content-wrapper { display: inline-flex; align-items: center; gap: 8px; }
+.dp-ext-icon { width: 16px; height: 16px; flex: 0 0 16px; }

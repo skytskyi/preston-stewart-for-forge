@@ -336,7 +336,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link href="assets/wp-content/plugins/elementor/assets/lib/animations/styles/slideInRight.min.css?ver=3.24.5" id="e-animation-slideInRight-css" media="all" rel="stylesheet"/>
 <link href="assets/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=8.0.5" id="photoswipe-css" media="all" rel="stylesheet"/>
 <link href="assets/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=8.0.5" id="photoswipe-default-skin-css" media="all" rel="stylesheet"/>
-<style>.static-copy-cta{display:inline-block;padding:16px 28px;background:#e5474d;color:#fff!important;font-weight:700;border-radius:6px;text-decoration:none;margin:12px 0}.static-copy-cta:hover{opacity:.9}</style><link rel="stylesheet" href="assets/donate-popup.css">
+<style>.static-copy-cta{display:inline-block;padding:16px 28px;background:#e5474d;color:#fff!important;font-weight:700;border-radius:6px;text-decoration:none;margin:12px 0}.static-copy-cta:hover{opacity:.9}</style><link href="assets/donate-popup.css" rel="stylesheet"/>
 </head>
 <body class="wp-singular page-template-default page page-id-64008 wp-custom-logo wp-theme-hello-elementor wp-child-theme-hello-elementor-child theme-hello-elementor woocommerce-checkout woocommerce-page woocommerce-js elementor-default elementor-kit-2545 elementor-page elementor-page-64008 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit cookies-not-set" data-elementor-device-mode="tablet" style="">
 <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -957,7 +957,6 @@ THE PROJECT</h2> </div>
 <div class="elementor-widget-container">
 <p>Please include the project name in your donation comment to ensure your contribution is allocated to this initiative. Use the copy button below to easily copy the project name.</p> </div>
 </div>
-
 </div>
 <div class="elementor-element elementor-element-94b2983 e-con-full e-flex e-con e-child" data-element_type="container" data-id="94b2983">
 <div class="elementor-element elementor-element-d73c881 elementor-align-justify showpopup elementor-widget__width-initial elementor-widget elementor-widget-button" data-element_type="widget" data-id="d73c881" data-widget_type="button.default">
@@ -974,7 +973,7 @@ THE PROJECT</h2> </div>
 <div class="elementor-element elementor-element-2e72f88 elementor-align-justify showpopup elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-button" data-element_type="widget" data-id="2e72f88" data-widget_type="button.default">
 <div class="elementor-widget-container">
 <div class="elementor-button-wrapper">
-<a class="elementor-button elementor-button-link elementor-size-md elementor-animation-grow" data-fancybox="" href="#swift">
+<a class="elementor-button elementor-button-link elementor-size-md dp-btn-secondary" data-dp-open="dp-swift" href="#swift">
 <span class="elementor-button-content-wrapper">
 <span class="elementor-button-text">SWIFT</span>
 </span>
@@ -985,20 +984,17 @@ THE PROJECT</h2> </div>
 <div class="elementor-element elementor-element-5c95247 elementor-align-justify showpopup elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-button" data-element_type="widget" data-id="5c95247" data-widget_type="button.default">
 <div class="elementor-widget-container">
 <div class="elementor-button-wrapper">
-<a class="elementor-button elementor-button-link elementor-size-md elementor-animation-grow" href="https://pay.whitepay.com/crypto-jars/a271e345-c55f-4832-be41-1639e715d6ef" rel="nofollow noopener" target="_blank">
+<a class="elementor-button elementor-button-link elementor-size-md dp-btn-secondary" aria-label="Crypto (opens whitepay.com in a new tab)" href="https://pay.whitepay.com/crypto-jars/a271e345-c55f-4832-be41-1639e715d6ef" rel="noopener noreferrer" target="_blank" title="Opens whitepay.com in a new tab">
 <span class="elementor-button-content-wrapper">
-<span class="elementor-button-text">Crypto</span>
+<span class="elementor-button-text">Crypto</span><svg aria-hidden="true" class="dp-ext-icon" fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 16 16"><path d="M6 3H3.5A1.5 1.5 0 0 0 2 4.5v8A1.5 1.5 0 0 0 3.5 14h8a1.5 1.5 0 0 0 1.5-1.5V10"></path><path d="M9 2h5v5"></path><path d="M14 2L7.5 8.5"></path></svg>
 </span>
 </a>
 </div>
 </div>
 </div>
-
-
 </div>
 </div>
 </div>
-
 <div class="elementor-element elementor-element-8ba9f09 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="8ba9f09" data-settings='{"background_background":"classic"}'>
 <div class="e-con-inner">
 <div class="elementor-element elementor-element-62aa282 e-con-full e-flex e-con e-child" data-element_type="container" data-id="62aa282" data-settings='{"background_background":"classic"}'>
@@ -2154,123 +2150,190 @@ other projects</h2> </div>
 </div>
 <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility linear 0.3s, opacity 0.3s linear; opacity: 0;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div><div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: fixed; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255);"></div></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"></div></div>
 <!-- Quick Donation popup (Figma: Donations — DP style, node 1849:10639) -->
-<div class="dp-modal" id="dp-modal" aria-hidden="true">
-  <div class="dp-dialog" role="dialog" aria-modal="true" aria-labelledby="dp-title">
+<div aria-hidden="true" class="dp-modal" id="dp-modal">
+<div aria-labelledby="dp-title" aria-modal="true" class="dp-dialog" role="dialog">
+<button aria-label="Close" class="dp-close" type="button">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
+<form class="dp-form" novalidate="">
+<h2 class="dp-title" id="dp-title">Quick Donation</h2>
+<fieldset class="dp-field">
+<legend class="dp-label">Currency:</legend>
+<div class="dp-seg" style="margin-top:8px">
+<label class="dp-seg__opt"><input checked="" name="currency" type="radio" value="USD"/><span>USD</span></label>
+<label class="dp-seg__opt"><input name="currency" type="radio" value="EUR"/><span>EUR</span></label>
+<label class="dp-seg__opt"><input name="currency" type="radio" value="UAH"/><span>UAH</span></label>
+</div>
+</fieldset>
+<fieldset class="dp-field">
+<legend class="dp-label">Amount:</legend>
+<div class="dp-seg" style="margin-top:8px">
+<label class="dp-seg__opt"><input checked="" name="amount" type="radio" value="10"/><span data-amount-label="10">$10</span></label>
+<label class="dp-seg__opt"><input name="amount" type="radio" value="25"/><span data-amount-label="25">$25</span></label>
+<label class="dp-seg__opt"><input name="amount" type="radio" value="50"/><span data-amount-label="50">$50</span></label>
+<label class="dp-seg__opt"><input name="amount" type="radio" value="100"/><span data-amount-label="100">$100</span></label>
+<label class="dp-seg__opt"><input name="amount" type="radio" value="500"/><span data-amount-label="500">$500</span></label>
+<label class="dp-seg__opt"><input name="amount" type="radio" value="other"/><span>Other</span></label>
+</div>
+<div class="dp-other">
+<span class="dp-other__cur">$</span>
+<input aria-label="Custom amount" class="dp-input" id="dp-other-amount" inputmode="decimal" min="1" placeholder="Enter amount" step="1" type="number"/>
+</div>
+</fieldset>
+<fieldset class="dp-field">
+<legend class="dp-label">Payment service:</legend>
+<div class="dp-seg dp-seg--services" style="margin-top:8px">
+<label class="dp-seg__opt"><input aria-label="plata by mono" checked="" name="service" type="radio" value="mono"/><span><svg aria-hidden="true" class="dp-logo dp-logo--plata" fill="none" focusable="false" viewbox="55.75 8 164 34" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1849_10687)">
+<rect fill="white" height="27" width="57" x="61.75" y="12"></rect>
+<path clip-rule="evenodd" d="M62.819 8C58.9149 8 55.75 11.1713 55.75 15.0833V34.9167C55.75 38.8286 58.9149 42 62.819 42H117.957C121.861 42 125.026 38.8287 125.026 34.9167V15.0833C125.026 11.1713 121.861 8 117.957 8H62.819ZM113.43 30.6286H116.543V23.3574C116.543 21.8504 116.061 20.7628 115.097 20.0947C114.132 19.4266 112.89 19.0926 111.37 19.0926C109.327 19.0926 107.603 19.683 106.198 20.8638L107.374 22.8447C108.388 21.9591 109.54 21.5163 110.831 21.5163C111.616 21.5163 112.245 21.6873 112.719 22.029C113.193 22.3709 113.43 22.8292 113.43 23.4041V24.9189C112.612 24.0022 111.362 23.5439 109.679 23.5439C108.584 23.5439 107.62 23.8468 106.786 24.4527C105.969 25.0587 105.56 25.9676 105.56 27.1795C105.56 28.3447 105.977 29.2613 106.811 29.9294C107.66 30.5819 108.616 30.9083 109.679 30.9083C111.33 30.9083 112.58 30.4266 113.43 29.4634V30.6286ZM113.43 27.9252C112.923 28.5777 112.089 28.904 110.929 28.904C110.292 28.904 109.761 28.7564 109.336 28.4612C108.911 28.166 108.698 27.7621 108.698 27.2494C108.698 26.7211 108.911 26.3094 109.336 26.0142C109.761 25.7034 110.292 25.5481 110.929 25.5481C112.089 25.5481 112.923 25.8744 113.43 26.5269V27.9252ZM102.008 30.9075C100.913 30.9075 100.08 30.6434 99.508 30.1151C98.9359 29.5869 98.6499 28.8256 98.6499 27.8312V21.9583H96.6887V19.3715H98.6499V16.2952H101.788V19.3715H104.19V21.9583H101.788V27.0389C101.788 27.3962 101.886 27.6914 102.082 27.9244C102.278 28.1575 102.54 28.2741 102.866 28.2741C103.357 28.2741 103.716 28.1653 103.945 27.9477L104.607 30.185C104.035 30.6667 103.169 30.9075 102.008 30.9075ZM91.8355 30.6286H94.9489V23.3574C94.9489 21.8504 94.4668 20.7628 93.5025 20.0947C92.5382 19.4266 91.2962 19.0926 89.7763 19.0926C87.7333 19.0926 86.0091 19.683 84.6035 20.8638L85.7802 22.8447C86.7935 21.9591 87.9457 21.5163 89.2369 21.5163C90.0214 21.5163 90.6506 21.6873 91.1246 22.029C91.5985 22.3709 91.8355 22.8292 91.8355 23.4041V24.9189C91.0183 24.0022 89.7681 23.5439 88.0846 23.5439C86.9897 23.5439 86.0254 23.8468 85.1919 24.4527C84.3747 25.0587 83.9661 25.9676 83.9661 27.1795C83.9661 28.3447 84.3828 29.2613 85.2164 29.9294C86.0662 30.5819 87.0223 30.9083 88.0846 30.9083C89.7354 30.9083 90.9856 30.4266 91.8355 29.4634V30.6286ZM91.8355 27.9252C91.3289 28.5777 90.4953 28.904 89.3349 28.904C88.6975 28.904 88.1664 28.7564 87.7415 28.4612C87.3165 28.166 87.104 27.7621 87.104 27.2494C87.104 26.7211 87.3165 26.3094 87.7415 26.0142C88.1664 25.7034 88.6975 25.5481 89.3349 25.5481C90.4953 25.5481 91.3289 25.8744 91.8355 26.5269V27.9252ZM81.6383 30.6278H78.5249V15.0833H81.6383V30.6278ZM67.3462 29.1838C68.2941 30.3335 69.5117 30.9084 70.999 30.9084C72.5516 30.9084 73.81 30.3801 74.7743 29.3237C75.7549 28.2672 76.2452 26.8223 76.2452 24.9889C76.2452 23.1556 75.7549 21.7184 74.7743 20.6775C73.81 19.621 72.5516 19.0928 70.999 19.0928C69.4954 19.0928 68.2778 19.6599 67.3462 20.7941V19.3724H64.2328V34.9169H67.3462V29.1838ZM72.1757 27.366C71.6364 27.972 70.9172 28.2749 70.0184 28.2749C69.528 28.2749 69.0214 28.1507 68.4984 27.902C67.9918 27.6535 67.6077 27.3505 67.3462 26.9932V23.008C67.6077 22.6507 67.9918 22.3477 68.4984 22.0991C69.005 21.8505 69.5117 21.7262 70.0184 21.7262C70.9172 21.7262 71.6364 22.0292 72.1757 22.6352C72.7314 23.2411 73.0092 24.0257 73.0092 24.9889C73.0092 25.9677 72.7314 26.7601 72.1757 27.366Z" fill="black" fill-rule="evenodd"></path>
+<path d="M218.137 30.4274C217.061 31.5458 215.632 32.1051 213.85 32.1051C212.068 32.1051 210.639 31.5458 209.563 30.4274C208.504 29.2936 207.974 27.907 207.974 26.2676C207.974 24.6282 208.504 23.2493 209.563 22.1308C210.639 21.0124 212.068 20.4531 213.85 20.4531C215.632 20.4531 217.061 21.0124 218.137 22.1308C219.212 23.2493 219.75 24.6282 219.75 26.2676C219.75 27.907 219.212 29.2936 218.137 30.4274ZM211.776 28.5888C212.283 29.2017 212.974 29.5081 213.85 29.5081C214.726 29.5081 215.417 29.2017 215.924 28.5888C216.446 27.9606 216.708 27.1869 216.708 26.2676C216.708 25.3636 216.446 24.6052 215.924 23.9924C215.417 23.3642 214.726 23.0501 213.85 23.0501C212.974 23.0501 212.283 23.3642 211.776 23.9924C211.269 24.6052 211.015 25.3636 211.015 26.2676C211.015 27.1869 211.269 27.9606 211.776 28.5888Z" fill="black"></path>
+<path d="M205.782 31.8293H202.855V25.1185C202.855 23.7396 202.171 23.0501 200.804 23.0501C199.744 23.0501 198.899 23.4868 198.269 24.3601V31.8293H195.342V20.7289H198.269V22.1768C199.237 21.0277 200.535 20.4531 202.163 20.4531C203.362 20.4531 204.261 20.7672 204.86 21.3954C205.474 22.0236 205.782 22.8892 205.782 23.9924V31.8293Z" fill="black"></path>
+<path d="M191.557 30.4274C190.481 31.5458 189.053 32.1051 187.271 32.1051C185.489 32.1051 184.059 31.5458 182.984 30.4274C181.924 29.2936 181.394 27.907 181.394 26.2676C181.394 24.6282 181.924 23.2493 182.984 22.1308C184.059 21.0124 185.489 20.4531 187.271 20.4531C189.053 20.4531 190.481 21.0124 191.557 22.1308C192.632 23.2493 193.17 24.6282 193.17 26.2676C193.17 27.907 192.632 29.2936 191.557 30.4274ZM185.197 28.5888C185.703 29.2017 186.395 29.5081 187.271 29.5081C188.147 29.5081 188.838 29.2017 189.345 28.5888C189.867 27.9606 190.128 27.1869 190.128 26.2676C190.128 25.3636 189.867 24.6052 189.345 23.9924C188.838 23.3642 188.147 23.0501 187.271 23.0501C186.395 23.0501 185.703 23.3642 185.197 23.9924C184.689 24.6052 184.436 25.3636 184.436 26.2676C184.436 27.1869 184.689 27.9606 185.197 28.5888Z" fill="black"></path>
+<path d="M179.239 31.8293H176.289V24.8197C176.289 23.64 175.735 23.0501 174.63 23.0501C174.153 23.0501 173.707 23.1804 173.293 23.4408C172.893 23.7013 172.57 24 172.324 24.3371V31.8293H169.374V24.8197C169.374 23.64 168.822 23.0501 167.715 23.0501C167.255 23.0501 166.817 23.1804 166.402 23.4408C165.987 23.7013 165.657 24.0077 165.411 24.3601V31.8293H162.484V20.7289H165.411V22.1768C165.687 21.7784 166.172 21.3954 166.863 21.0277C167.554 20.6447 168.284 20.4531 169.052 20.4531C170.665 20.4531 171.695 21.1272 172.141 22.4756C172.494 21.924 173.016 21.449 173.708 21.0507C174.414 20.6523 175.167 20.4531 175.966 20.4531C177.01 20.4531 177.817 20.7365 178.386 21.3035C178.954 21.855 179.239 22.69 179.239 23.8085V31.8293Z" fill="black"></path>
+<path d="M146.62 36.1725L147.058 33.5526C147.335 33.6751 147.642 33.7364 147.98 33.7364C148.763 33.7364 149.278 33.4683 149.524 32.932L149.939 31.9898L145.422 20.7285H148.556L151.459 28.4506L154.363 20.7285H157.52L152.289 33.6445C151.906 34.6251 151.368 35.3069 150.676 35.6899C149.985 36.0883 149.117 36.3028 148.072 36.3335C147.534 36.3335 147.051 36.2798 146.62 36.1725Z" fill="black"></path>
+<path d="M136.435 28.2668C136.681 28.6192 137.043 28.918 137.519 29.1632C137.995 29.393 138.471 29.5079 138.948 29.5079C139.792 29.5079 140.476 29.2168 140.998 28.6346C141.521 28.0371 141.782 27.2557 141.782 26.2904C141.782 25.3251 141.521 24.5438 140.998 23.9462C140.476 23.3487 139.792 23.0499 138.948 23.0499C138.471 23.0499 137.995 23.1725 137.519 23.4177C137.043 23.6628 136.681 23.9692 136.435 24.3369V28.2668ZM136.435 31.8291H133.509V16.5H136.435V22.1536C137.311 21.0198 138.456 20.4529 139.869 20.4529C141.314 20.4529 142.496 20.9816 143.418 22.0387C144.341 23.0959 144.801 24.5131 144.801 26.2904C144.801 28.0983 144.341 29.5232 143.418 30.5651C142.496 31.5916 141.314 32.1049 139.869 32.1049C138.487 32.1049 137.342 31.538 136.435 30.4042V31.8291Z" fill="black"></path>
+</g>
+<defs>
+<clippath id="clip0_1849_10687">
+<rect fill="white" height="34" transform="translate(55.75 8)" width="164"></rect>
+</clippath>
+</defs>
+</svg></span></label>
+<label class="dp-seg__opt"><input aria-label="LiqPay" name="service" type="radio" value="liqpay"/><span><svg aria-hidden="true" class="dp-logo dp-logo--liqpay" fill="none" focusable="false" viewbox="69.9 8 135.1 27.8" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M105.621 8C107.72 8 109.576 8.46299 111.122 9.34488C112.691 10.2709 113.884 11.5717 114.724 13.2252C115.563 14.9008 115.983 16.885 115.983 19.1559C115.983 21.6032 115.497 23.7418 114.503 25.4835C113.53 27.2472 112.116 28.526 110.283 29.3418C111.233 29.6504 112.006 30.3559 112.647 31.3922L113.751 33.0457C113.972 33.4205 114.105 33.7732 114.105 34.1481C114.105 34.611 113.928 35.0078 113.553 35.2945C113.177 35.5811 112.735 35.7575 112.249 35.7575C111.873 35.7575 111.52 35.6693 111.188 35.4929C110.879 35.3165 110.592 35.0519 110.371 34.7213L108.559 31.7228C108.272 31.2378 107.896 30.885 107.432 30.6646C106.968 30.4441 106.372 30.3118 105.621 30.3118C103.477 30.3118 101.643 29.8488 100.075 28.9669C98.506 28.0409 97.3129 26.7401 96.4733 25.0867C95.6337 23.389 95.2139 21.4047 95.2139 19.1559C95.2139 16.885 95.6558 14.9228 96.4733 13.2252C97.3129 11.5496 98.5281 10.2709 100.075 9.34488C101.643 8.4189 103.477 8 105.621 8ZM158.537 8.02205C159.068 8.02205 159.488 8.24252 159.863 8.70551L166.204 16.5543L172.523 8.70551C172.899 8.26457 173.363 8.04409 173.894 8.04409C174.357 8.04409 174.777 8.22047 175.153 8.59528C175.528 8.97008 175.705 9.36693 175.705 9.89606C175.705 10.2929 175.551 10.7118 175.241 11.0866L168.193 19.663V28.2394C168.193 28.8787 168.016 29.3637 167.641 29.7386C167.265 30.1134 166.801 30.2677 166.227 30.2677C165.63 30.2677 165.122 30.0913 164.746 29.7386C164.37 29.3858 164.193 28.9008 164.193 28.2394V19.663L157.19 11.0646C156.88 10.6898 156.726 10.2929 156.726 9.87401C156.726 9.38898 156.902 8.94803 157.278 8.57323C157.654 8.19843 158.096 8.02205 158.537 8.02205ZM135.316 9.96221C134.012 8.77165 132.201 8.19843 129.858 8.19843H122.236C121.639 8.19843 121.175 8.3748 120.822 8.68346C120.468 9.01418 120.291 9.47717 120.291 10.0724V28.1732C120.291 28.7905 120.468 29.2756 120.844 29.6504C121.175 30.0252 121.683 30.2016 122.28 30.2236C122.899 30.2236 123.385 30.0473 123.76 29.6724C124.136 29.3197 124.313 28.8346 124.313 28.1953V21.537H129.858C132.201 21.537 134.012 20.9637 135.316 19.7732C136.62 18.6047 137.282 16.9512 137.282 14.8567C137.282 12.7622 136.62 11.1087 135.316 9.96221ZM89.0936 8.02205C89.6902 8.02205 90.2205 8.19843 90.574 8.57323C90.9496 8.94803 91.1264 9.41103 91.1264 10.0063V28.1732C91.1264 28.7685 90.9496 29.2756 90.574 29.6504C90.1984 30.0252 89.7123 30.2016 89.0936 30.2016C88.5192 30.2016 88.0331 30.0252 87.6575 29.6504C87.2819 29.2756 87.1051 28.7905 87.1051 28.1732V10.0063C87.1051 9.41103 87.2819 8.94803 87.6575 8.57323C88.0331 8.19843 88.4971 8.02205 89.0936 8.02205ZM148.816 8.30866C148.44 8.11024 148.042 8 147.601 8C147.159 8 146.761 8.08819 146.385 8.30866C145.988 8.52913 145.7 8.85984 145.524 9.25669L136.951 27.6221C136.84 27.8867 136.774 28.1732 136.774 28.4378C136.774 28.9228 136.951 29.3418 137.349 29.6504C137.724 29.9591 138.188 30.1354 138.652 30.1354C139.006 30.1354 139.315 30.0472 139.602 29.8709C139.89 29.6945 140.11 29.4299 140.287 29.0551L142.165 24.9103H153.036L154.914 29.0551C155.069 29.4078 155.312 29.6945 155.599 29.8709C155.886 30.0472 156.218 30.1354 156.527 30.1354C157.035 30.1354 157.477 29.9591 157.852 29.6504C158.229 29.2977 158.427 28.9008 158.427 28.4378C158.427 28.1512 158.361 27.9087 158.272 27.6221L149.677 9.25669C149.479 8.8378 149.191 8.52913 148.816 8.30866ZM71.926 8.04409C72.5226 8.04409 73.0529 8.22047 73.4064 8.59528C73.782 8.97008 73.9587 9.43308 73.9587 10.0283V26.7622H82.642C83.8793 26.7622 84.5201 27.3134 84.5201 28.3937C84.5201 29.474 83.8793 30.0252 82.642 30.0252H71.8156C71.219 30.0252 70.755 29.8488 70.4236 29.5181C70.1143 29.2095 69.9375 28.7464 69.9375 28.1732V10.0283C69.9375 9.43308 70.1143 8.97008 70.4899 8.59528C70.8655 8.22047 71.3295 8.04409 71.926 8.04409ZM100.848 13.1811C101.975 11.8142 103.544 11.1307 105.576 11.1307C107.609 11.1307 109.156 11.7921 110.283 13.1811C111.409 14.5701 111.984 16.5102 111.984 19.1118C111.984 21.6693 111.409 23.6536 110.283 25.0426C109.156 26.4315 107.587 27.115 105.576 27.115C103.566 27.115 101.975 26.4315 100.848 25.0426C99.7213 23.6536 99.1468 21.7134 99.1468 19.1118C99.1468 16.5102 99.7213 14.5701 100.848 13.1811ZM147.601 12.652L143.513 21.8236H151.71L147.601 12.652ZM124.313 11.3071H129.35C132.09 11.3071 133.482 12.5197 133.482 14.9008C133.482 17.2819 132.09 18.4945 129.35 18.4945L124.313 18.4724V11.3071Z" fill="#4B4C4B" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M183.66 29.5222L183.351 29.2576C182.599 28.6182 182.466 27.4498 183.151 26.7002L191.194 17.5285C191.835 16.7789 193.006 16.6466 193.757 17.33L194.066 17.5946C194.818 18.234 194.95 19.4026 194.266 20.1521L186.223 29.3238C185.582 30.0734 184.455 30.1616 183.66 29.5222Z" fill="url(#paint0_linear_1849_10697)" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M190.111 19.1159L189.957 18.9395L188.72 20.3505L188.852 20.5048C190.973 22.6214 190.067 24.76 189.581 25.5096L189.757 25.3111C190.045 24.9805 190.487 24.4733 190.951 23.9221C191.437 23.0843 192.122 21.1001 190.111 19.1159Z" fill="url(#paint1_linear_1849_10697)" fill-rule="evenodd" opacity="0.4"></path>
+<path clip-rule="evenodd" d="M192.763 21.8723L193.094 21.4975C193.116 21.4534 193.16 21.4093 193.182 21.3652C192.828 21.762 192.453 22.181 192.1 22.5999C192.365 22.3132 192.586 22.0707 192.763 21.8723Z" fill="url(#paint2_radial_1849_10697)" fill-rule="evenodd" opacity="0.4"></path>
+<path clip-rule="evenodd" d="M194.309 17.8154L186.267 8.64373C185.625 7.89412 184.455 7.76184 183.704 8.44531L183.394 8.70987C182.643 9.34924 182.51 10.5178 183.196 11.2674L189.979 18.9398L190.133 19.1162C192.143 21.1225 191.459 23.1067 190.951 23.9445C191.348 23.4816 191.746 23.0185 192.121 22.5996C192.475 22.1808 192.851 21.7618 193.205 21.365C193.558 20.9681 193.889 20.5934 194.11 20.3508C194.884 19.6012 194.994 18.565 194.309 17.8154Z" fill="url(#paint3_linear_1849_10697)" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M193.867 29.5222L193.558 29.2576C192.807 28.6182 192.675 27.4498 193.359 26.7002L201.402 17.5285C202.042 16.7789 203.213 16.6466 203.965 17.33L204.274 17.5946C205.025 18.234 205.157 19.4026 204.473 20.1521L196.43 29.3238C195.79 30.0734 194.663 30.1616 193.867 29.5222Z" fill="url(#paint4_linear_1849_10697)" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M200.407 19.028L200.253 18.8516L199.016 20.2626L199.148 20.4169C201.269 22.5335 200.363 24.6721 199.877 25.4217L200.053 25.2232C200.341 24.8926 200.783 24.3854 201.247 23.8342C201.732 22.9964 202.418 21.0122 200.407 19.028Z" fill="url(#paint5_linear_1849_10697)" fill-rule="evenodd" opacity="0.4"></path>
+<path clip-rule="evenodd" d="M202.948 21.8723L203.279 21.4975C203.301 21.4534 203.346 21.4093 203.368 21.3652C203.014 21.762 202.639 22.181 202.285 22.5999C202.55 22.3132 202.794 22.0707 202.948 21.8723Z" fill="url(#paint6_radial_1849_10697)" fill-rule="evenodd" opacity="0.4"></path>
+<path clip-rule="evenodd" d="M204.495 17.8154L196.452 8.64373C195.811 7.89412 194.64 7.76184 193.889 8.44531L193.58 8.70987C192.828 9.34924 192.696 10.5178 193.381 11.2674L200.164 18.9398L200.318 19.1162C202.329 21.1225 201.644 23.1067 201.136 23.9445C201.534 23.4816 201.932 23.0185 202.307 22.5996C202.661 22.1808 203.036 21.7618 203.389 21.365C203.743 20.9681 204.075 20.5934 204.296 20.3508C205.069 19.6012 205.18 18.565 204.495 17.8154Z" fill="url(#paint7_linear_1849_10697)" fill-rule="evenodd"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_1849_10697" x1="186.172" x2="197.324" y1="32.3849" y2="26.966">
+<stop stop-color="#1FADC3"></stop>
+<stop offset="0.7072" stop-color="#36B98F"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="paint1_linear_1849_10697" x1="190.091" x2="192.177" y1="23.7116" y2="23.4072">
+<stop stop-color="#123F06" stop-opacity="0.01"></stop>
+<stop offset="1" stop-color="#123F06"></stop>
+</lineargradient>
+<radialgradient cx="0" cy="0" gradienttransform="translate(188.331 23.0185) scale(5.38712 6.14348)" gradientunits="userSpaceOnUse" id="paint2_radial_1849_10697" r="1">
+<stop offset="0.4185" stop-color="#123F06" stop-opacity="0.01"></stop>
+<stop offset="1" stop-color="#123F06"></stop>
+</radialgradient>
+<lineargradient gradientunits="userSpaceOnUse" id="paint3_linear_1849_10697" x1="178.538" x2="192.068" y1="20.1534" y2="24.839">
+<stop stop-color="#9FDB57"></stop>
+<stop offset="1" stop-color="#71CA5E"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="paint4_linear_1849_10697" x1="196.37" x2="207.522" y1="32.3905" y2="26.9716">
+<stop stop-color="#1FADC3"></stop>
+<stop offset="0.7072" stop-color="#36B98F"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="paint5_linear_1849_10697" x1="200.387" x2="202.473" y1="23.6237" y2="23.3193">
+<stop stop-color="#123F06" stop-opacity="0.01"></stop>
+<stop offset="1" stop-color="#123F06"></stop>
+</lineargradient>
+<radialgradient cx="0" cy="0" gradienttransform="translate(198.525 23.0185) scale(5.38712 6.14348)" gradientunits="userSpaceOnUse" id="paint6_radial_1849_10697" r="1">
+<stop offset="0.4185" stop-color="#123F06" stop-opacity="0.01"></stop>
+<stop offset="1" stop-color="#123F06"></stop>
+</radialgradient>
+<lineargradient gradientunits="userSpaceOnUse" id="paint7_linear_1849_10697" x1="188.73" x2="202.26" y1="20.1574" y2="24.843">
+<stop stop-color="#9FDB57"></stop>
+<stop offset="1" stop-color="#71CA5E"></stop>
+</lineargradient>
+</defs>
+</svg></span></label>
+</div>
+</fieldset>
+<div class="dp-field dp-field--email">
+<label class="dp-label" for="dp-email">Email: *</label>
+<input autocomplete="email" class="dp-input" id="dp-email" required="" type="email"/>
+</div>
+<label class="dp-check">
+<input id="dp-terms" required="" type="checkbox"/>
+<span class="dp-check__box"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 14 14"><path d="M2.5 7.5l3 3 6-7"></path></svg></span>
+<span class="dp-check__text">I have read and agree to the website terms and conditions <span class="dp-req">*</span></span>
+</label>
+<p class="dp-note">Your data will be used to process your donation and for other purposes described in our <a href="https://dzygaspaw.com/privacy-policy/" rel="noopener" target="_blank">privacy policy</a>.</p>
+<button class="dp-submit" type="submit">Donate now</button>
+</form>
+</div>
+</div>
+
+<!-- SWIFT details popup (Figma: Donations — DP style / Payment=Swift, node 1858:10733) -->
+<div class="dp-modal" id="dp-swift" aria-hidden="true">
+  <div class="dp-dialog" role="dialog" aria-modal="true" aria-labelledby="dp-swift-title">
     <button type="button" class="dp-close" aria-label="Close">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
-    <form class="dp-form" novalidate>
-      <h2 class="dp-title" id="dp-title">Quick Donation</h2>
-
+    <div class="dp-swift-body">
+      <h2 class="dp-title" id="dp-swift-title">Our Swift account</h2>
       <fieldset class="dp-field">
         <legend class="dp-label">Currency:</legend>
         <div class="dp-seg" style="margin-top:8px">
-          <label class="dp-seg__opt"><input type="radio" name="currency" value="USD" checked><span>USD</span></label>
-          <label class="dp-seg__opt"><input type="radio" name="currency" value="EUR"><span>EUR</span></label>
-          <label class="dp-seg__opt"><input type="radio" name="currency" value="UAH"><span>UAH</span></label>
+          <label class="dp-seg__opt"><input type="radio" name="swift-currency" value="USD" checked><span>USD</span></label>
+          <label class="dp-seg__opt"><input type="radio" name="swift-currency" value="EUR"><span>EUR</span></label>
+          <label class="dp-seg__opt"><input type="radio" name="swift-currency" value="UAH"><span>UAH</span></label>
+          <label class="dp-seg__opt"><input type="radio" name="swift-currency" value="GBP"><span>GBP</span></label>
+          <label class="dp-seg__opt"><input type="radio" name="swift-currency" value="CHF"><span>CHF</span></label>
+          <label class="dp-seg__opt"><input type="radio" name="swift-currency" value="PLN"><span>PLN</span></label>
         </div>
       </fieldset>
-
-      <fieldset class="dp-field">
-        <legend class="dp-label">Amount:</legend>
-        <div class="dp-seg" style="margin-top:8px">
-          <label class="dp-seg__opt"><input type="radio" name="amount" value="10" checked><span data-amount-label="10">$10</span></label>
-          <label class="dp-seg__opt"><input type="radio" name="amount" value="25"><span data-amount-label="25">$25</span></label>
-          <label class="dp-seg__opt"><input type="radio" name="amount" value="50"><span data-amount-label="50">$50</span></label>
-          <label class="dp-seg__opt"><input type="radio" name="amount" value="100"><span data-amount-label="100">$100</span></label>
-          <label class="dp-seg__opt"><input type="radio" name="amount" value="500"><span data-amount-label="500">$500</span></label>
-          <label class="dp-seg__opt"><input type="radio" name="amount" value="other"><span>Other</span></label>
+      <div class="dp-details">
+        <div class="dp-detail">
+          <div class="dp-detail__text">
+            <p class="dp-detail__label">Recipient’s bank account, IBAN:</p>
+            <p class="dp-detail__value" data-swift-iban>UA623052990000026007011025810</p>
+          </div>
+          <button type="button" class="dp-copy" aria-label="Copy IBAN"><span class="dp-copy__face"><svg class="dp-copy__icon" viewBox="15 15 18 18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M32.4727 18.6L29.4 15.5274C29.2333 15.3596 29.035 15.2267 28.8165 15.1362C28.5981 15.0456 28.3638 14.9994 28.1273 15H23.1C22.1455 15.001 21.2305 15.3806 20.5555 16.0555C19.8806 16.7304 19.501 17.6455 19.5 18.6H18.6C17.6455 18.601 16.7304 18.9806 16.0555 19.6555C15.3806 20.3304 15.001 21.2455 15 22.2V29.4C15.001 30.3545 15.3806 31.2696 16.0555 31.9445C16.7304 32.6193 17.6455 32.999 18.6 33H24.9C25.8545 32.999 26.7696 32.6193 27.4444 31.9445C28.1193 31.2696 28.499 30.3545 28.5 29.4H29.4C30.3545 29.399 31.2696 29.0194 31.9445 28.3445C32.6193 27.6696 32.999 26.7545 33 25.8V19.8727C32.9987 19.3955 32.8092 18.9382 32.4727 18.6ZM28.5 17.1727L30.8273 19.5H29.6386C29.3368 19.4997 29.0474 19.3797 28.8339 19.1664C28.6205 18.953 28.5004 18.6636 28.5 18.3618V17.1727ZM24.9 31.2H18.6C18.1228 31.1995 17.6652 31.0097 17.3278 30.6722C16.9903 30.3347 16.8005 29.8772 16.8 29.4V22.2C16.8005 21.7228 16.9903 21.2652 17.3278 20.9278C17.6652 20.5904 18.1228 20.4005 18.6 20.4H19.5V25.8C19.501 26.7545 19.8806 27.6696 20.5555 28.3445C21.2305 29.0194 22.1455 29.399 23.1 29.4H26.7C26.6995 29.8772 26.5097 30.3347 26.1722 30.6722C25.8347 31.0097 25.3772 31.1995 24.9 31.2ZM29.4 27.6H23.1C22.6228 27.5995 22.1653 27.4097 21.8278 27.0722C21.4904 26.7347 21.3005 26.2772 21.3 25.8V18.6C21.3005 18.1228 21.4904 17.6652 21.8278 17.3278C22.1653 16.9903 22.6228 16.8005 23.1 16.8H26.7V18.3618C26.701 19.1408 27.0109 19.8876 27.5618 20.4385C28.1128 20.9893 28.8596 21.2991 29.6386 21.3H31.2V25.8C31.1995 26.2772 31.0097 26.7347 30.6722 27.0722C30.3347 27.4097 29.8772 27.5995 29.4 27.6Z"/></svg><svg class="dp-copy__done" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg></span><span class="dp-copy__tip" aria-hidden="true">Copied</span></button>
         </div>
-        <div class="dp-other">
-          <span class="dp-other__cur">$</span>
-          <input class="dp-input" id="dp-other-amount" type="number" inputmode="decimal" min="1" step="1" placeholder="Enter amount" aria-label="Custom amount">
+        <div class="dp-detail">
+          <div class="dp-detail__text">
+            <p class="dp-detail__label">Name of recipient</p>
+            <p class="dp-detail__value">CO CF DZYGA’S PAW</p>
+          </div>
+          <button type="button" class="dp-copy" aria-label="Copy recipient name"><span class="dp-copy__face"><svg class="dp-copy__icon" viewBox="15 15 18 18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M32.4727 18.6L29.4 15.5274C29.2333 15.3596 29.035 15.2267 28.8165 15.1362C28.5981 15.0456 28.3638 14.9994 28.1273 15H23.1C22.1455 15.001 21.2305 15.3806 20.5555 16.0555C19.8806 16.7304 19.501 17.6455 19.5 18.6H18.6C17.6455 18.601 16.7304 18.9806 16.0555 19.6555C15.3806 20.3304 15.001 21.2455 15 22.2V29.4C15.001 30.3545 15.3806 31.2696 16.0555 31.9445C16.7304 32.6193 17.6455 32.999 18.6 33H24.9C25.8545 32.999 26.7696 32.6193 27.4444 31.9445C28.1193 31.2696 28.499 30.3545 28.5 29.4H29.4C30.3545 29.399 31.2696 29.0194 31.9445 28.3445C32.6193 27.6696 32.999 26.7545 33 25.8V19.8727C32.9987 19.3955 32.8092 18.9382 32.4727 18.6ZM28.5 17.1727L30.8273 19.5H29.6386C29.3368 19.4997 29.0474 19.3797 28.8339 19.1664C28.6205 18.953 28.5004 18.6636 28.5 18.3618V17.1727ZM24.9 31.2H18.6C18.1228 31.1995 17.6652 31.0097 17.3278 30.6722C16.9903 30.3347 16.8005 29.8772 16.8 29.4V22.2C16.8005 21.7228 16.9903 21.2652 17.3278 20.9278C17.6652 20.5904 18.1228 20.4005 18.6 20.4H19.5V25.8C19.501 26.7545 19.8806 27.6696 20.5555 28.3445C21.2305 29.0194 22.1455 29.399 23.1 29.4H26.7C26.6995 29.8772 26.5097 30.3347 26.1722 30.6722C25.8347 31.0097 25.3772 31.1995 24.9 31.2ZM29.4 27.6H23.1C22.6228 27.5995 22.1653 27.4097 21.8278 27.0722C21.4904 26.7347 21.3005 26.2772 21.3 25.8V18.6C21.3005 18.1228 21.4904 17.6652 21.8278 17.3278C22.1653 16.9903 22.6228 16.8005 23.1 16.8H26.7V18.3618C26.701 19.1408 27.0109 19.8876 27.5618 20.4385C28.1128 20.9893 28.8596 21.2991 29.6386 21.3H31.2V25.8C31.1995 26.2772 31.0097 26.7347 30.6722 27.0722C30.3347 27.4097 29.8772 27.5995 29.4 27.6Z"/></svg><svg class="dp-copy__done" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg></span><span class="dp-copy__tip" aria-hidden="true">Copied</span></button>
         </div>
-      </fieldset>
-
-      <fieldset class="dp-field">
-        <legend class="dp-label">Payment service:</legend>
-        <div class="dp-seg dp-seg--services" style="margin-top:8px">
-          <label class="dp-seg__opt"><input type="radio" name="service" value="mono" checked aria-label="plata by mono"><span><svg class="dp-logo dp-logo--plata" aria-hidden="true" focusable="false" viewBox="55.75 8 164 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<g clip-path="url(#clip0_1849_10687)">
-<rect x="61.75" y="12" width="57" height="27" fill="white"/>
-<path d="M62.819 8C58.9149 8 55.75 11.1713 55.75 15.0833V34.9167C55.75 38.8286 58.9149 42 62.819 42H117.957C121.861 42 125.026 38.8287 125.026 34.9167V15.0833C125.026 11.1713 121.861 8 117.957 8H62.819ZM113.43 30.6286H116.543V23.3574C116.543 21.8504 116.061 20.7628 115.097 20.0947C114.132 19.4266 112.89 19.0926 111.37 19.0926C109.327 19.0926 107.603 19.683 106.198 20.8638L107.374 22.8447C108.388 21.9591 109.54 21.5163 110.831 21.5163C111.616 21.5163 112.245 21.6873 112.719 22.029C113.193 22.3709 113.43 22.8292 113.43 23.4041V24.9189C112.612 24.0022 111.362 23.5439 109.679 23.5439C108.584 23.5439 107.62 23.8468 106.786 24.4527C105.969 25.0587 105.56 25.9676 105.56 27.1795C105.56 28.3447 105.977 29.2613 106.811 29.9294C107.66 30.5819 108.616 30.9083 109.679 30.9083C111.33 30.9083 112.58 30.4266 113.43 29.4634V30.6286ZM113.43 27.9252C112.923 28.5777 112.089 28.904 110.929 28.904C110.292 28.904 109.761 28.7564 109.336 28.4612C108.911 28.166 108.698 27.7621 108.698 27.2494C108.698 26.7211 108.911 26.3094 109.336 26.0142C109.761 25.7034 110.292 25.5481 110.929 25.5481C112.089 25.5481 112.923 25.8744 113.43 26.5269V27.9252ZM102.008 30.9075C100.913 30.9075 100.08 30.6434 99.508 30.1151C98.9359 29.5869 98.6499 28.8256 98.6499 27.8312V21.9583H96.6887V19.3715H98.6499V16.2952H101.788V19.3715H104.19V21.9583H101.788V27.0389C101.788 27.3962 101.886 27.6914 102.082 27.9244C102.278 28.1575 102.54 28.2741 102.866 28.2741C103.357 28.2741 103.716 28.1653 103.945 27.9477L104.607 30.185C104.035 30.6667 103.169 30.9075 102.008 30.9075ZM91.8355 30.6286H94.9489V23.3574C94.9489 21.8504 94.4668 20.7628 93.5025 20.0947C92.5382 19.4266 91.2962 19.0926 89.7763 19.0926C87.7333 19.0926 86.0091 19.683 84.6035 20.8638L85.7802 22.8447C86.7935 21.9591 87.9457 21.5163 89.2369 21.5163C90.0214 21.5163 90.6506 21.6873 91.1246 22.029C91.5985 22.3709 91.8355 22.8292 91.8355 23.4041V24.9189C91.0183 24.0022 89.7681 23.5439 88.0846 23.5439C86.9897 23.5439 86.0254 23.8468 85.1919 24.4527C84.3747 25.0587 83.9661 25.9676 83.9661 27.1795C83.9661 28.3447 84.3828 29.2613 85.2164 29.9294C86.0662 30.5819 87.0223 30.9083 88.0846 30.9083C89.7354 30.9083 90.9856 30.4266 91.8355 29.4634V30.6286ZM91.8355 27.9252C91.3289 28.5777 90.4953 28.904 89.3349 28.904C88.6975 28.904 88.1664 28.7564 87.7415 28.4612C87.3165 28.166 87.104 27.7621 87.104 27.2494C87.104 26.7211 87.3165 26.3094 87.7415 26.0142C88.1664 25.7034 88.6975 25.5481 89.3349 25.5481C90.4953 25.5481 91.3289 25.8744 91.8355 26.5269V27.9252ZM81.6383 30.6278H78.5249V15.0833H81.6383V30.6278ZM67.3462 29.1838C68.2941 30.3335 69.5117 30.9084 70.999 30.9084C72.5516 30.9084 73.81 30.3801 74.7743 29.3237C75.7549 28.2672 76.2452 26.8223 76.2452 24.9889C76.2452 23.1556 75.7549 21.7184 74.7743 20.6775C73.81 19.621 72.5516 19.0928 70.999 19.0928C69.4954 19.0928 68.2778 19.6599 67.3462 20.7941V19.3724H64.2328V34.9169H67.3462V29.1838ZM72.1757 27.366C71.6364 27.972 70.9172 28.2749 70.0184 28.2749C69.528 28.2749 69.0214 28.1507 68.4984 27.902C67.9918 27.6535 67.6077 27.3505 67.3462 26.9932V23.008C67.6077 22.6507 67.9918 22.3477 68.4984 22.0991C69.005 21.8505 69.5117 21.7262 70.0184 21.7262C70.9172 21.7262 71.6364 22.0292 72.1757 22.6352C72.7314 23.2411 73.0092 24.0257 73.0092 24.9889C73.0092 25.9677 72.7314 26.7601 72.1757 27.366Z" fill-rule="evenodd" clip-rule="evenodd" fill="black"/>
-<path d="M218.137 30.4274C217.061 31.5458 215.632 32.1051 213.85 32.1051C212.068 32.1051 210.639 31.5458 209.563 30.4274C208.504 29.2936 207.974 27.907 207.974 26.2676C207.974 24.6282 208.504 23.2493 209.563 22.1308C210.639 21.0124 212.068 20.4531 213.85 20.4531C215.632 20.4531 217.061 21.0124 218.137 22.1308C219.212 23.2493 219.75 24.6282 219.75 26.2676C219.75 27.907 219.212 29.2936 218.137 30.4274ZM211.776 28.5888C212.283 29.2017 212.974 29.5081 213.85 29.5081C214.726 29.5081 215.417 29.2017 215.924 28.5888C216.446 27.9606 216.708 27.1869 216.708 26.2676C216.708 25.3636 216.446 24.6052 215.924 23.9924C215.417 23.3642 214.726 23.0501 213.85 23.0501C212.974 23.0501 212.283 23.3642 211.776 23.9924C211.269 24.6052 211.015 25.3636 211.015 26.2676C211.015 27.1869 211.269 27.9606 211.776 28.5888Z" fill="black"/>
-<path d="M205.782 31.8293H202.855V25.1185C202.855 23.7396 202.171 23.0501 200.804 23.0501C199.744 23.0501 198.899 23.4868 198.269 24.3601V31.8293H195.342V20.7289H198.269V22.1768C199.237 21.0277 200.535 20.4531 202.163 20.4531C203.362 20.4531 204.261 20.7672 204.86 21.3954C205.474 22.0236 205.782 22.8892 205.782 23.9924V31.8293Z" fill="black"/>
-<path d="M191.557 30.4274C190.481 31.5458 189.053 32.1051 187.271 32.1051C185.489 32.1051 184.059 31.5458 182.984 30.4274C181.924 29.2936 181.394 27.907 181.394 26.2676C181.394 24.6282 181.924 23.2493 182.984 22.1308C184.059 21.0124 185.489 20.4531 187.271 20.4531C189.053 20.4531 190.481 21.0124 191.557 22.1308C192.632 23.2493 193.17 24.6282 193.17 26.2676C193.17 27.907 192.632 29.2936 191.557 30.4274ZM185.197 28.5888C185.703 29.2017 186.395 29.5081 187.271 29.5081C188.147 29.5081 188.838 29.2017 189.345 28.5888C189.867 27.9606 190.128 27.1869 190.128 26.2676C190.128 25.3636 189.867 24.6052 189.345 23.9924C188.838 23.3642 188.147 23.0501 187.271 23.0501C186.395 23.0501 185.703 23.3642 185.197 23.9924C184.689 24.6052 184.436 25.3636 184.436 26.2676C184.436 27.1869 184.689 27.9606 185.197 28.5888Z" fill="black"/>
-<path d="M179.239 31.8293H176.289V24.8197C176.289 23.64 175.735 23.0501 174.63 23.0501C174.153 23.0501 173.707 23.1804 173.293 23.4408C172.893 23.7013 172.57 24 172.324 24.3371V31.8293H169.374V24.8197C169.374 23.64 168.822 23.0501 167.715 23.0501C167.255 23.0501 166.817 23.1804 166.402 23.4408C165.987 23.7013 165.657 24.0077 165.411 24.3601V31.8293H162.484V20.7289H165.411V22.1768C165.687 21.7784 166.172 21.3954 166.863 21.0277C167.554 20.6447 168.284 20.4531 169.052 20.4531C170.665 20.4531 171.695 21.1272 172.141 22.4756C172.494 21.924 173.016 21.449 173.708 21.0507C174.414 20.6523 175.167 20.4531 175.966 20.4531C177.01 20.4531 177.817 20.7365 178.386 21.3035C178.954 21.855 179.239 22.69 179.239 23.8085V31.8293Z" fill="black"/>
-<path d="M146.62 36.1725L147.058 33.5526C147.335 33.6751 147.642 33.7364 147.98 33.7364C148.763 33.7364 149.278 33.4683 149.524 32.932L149.939 31.9898L145.422 20.7285H148.556L151.459 28.4506L154.363 20.7285H157.52L152.289 33.6445C151.906 34.6251 151.368 35.3069 150.676 35.6899C149.985 36.0883 149.117 36.3028 148.072 36.3335C147.534 36.3335 147.051 36.2798 146.62 36.1725Z" fill="black"/>
-<path d="M136.435 28.2668C136.681 28.6192 137.043 28.918 137.519 29.1632C137.995 29.393 138.471 29.5079 138.948 29.5079C139.792 29.5079 140.476 29.2168 140.998 28.6346C141.521 28.0371 141.782 27.2557 141.782 26.2904C141.782 25.3251 141.521 24.5438 140.998 23.9462C140.476 23.3487 139.792 23.0499 138.948 23.0499C138.471 23.0499 137.995 23.1725 137.519 23.4177C137.043 23.6628 136.681 23.9692 136.435 24.3369V28.2668ZM136.435 31.8291H133.509V16.5H136.435V22.1536C137.311 21.0198 138.456 20.4529 139.869 20.4529C141.314 20.4529 142.496 20.9816 143.418 22.0387C144.341 23.0959 144.801 24.5131 144.801 26.2904C144.801 28.0983 144.341 29.5232 143.418 30.5651C142.496 31.5916 141.314 32.1049 139.869 32.1049C138.487 32.1049 137.342 31.538 136.435 30.4042V31.8291Z" fill="black"/>
-</g>
-<defs>
-<clipPath id="clip0_1849_10687">
-<rect width="164" height="34" fill="white" transform="translate(55.75 8)"/>
-</clipPath>
-</defs>
-</svg></span></label>
-          <label class="dp-seg__opt"><input type="radio" name="service" value="liqpay" aria-label="LiqPay"><span><svg class="dp-logo dp-logo--liqpay" aria-hidden="true" focusable="false" viewBox="69.9 8 135.1 27.8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M105.621 8C107.72 8 109.576 8.46299 111.122 9.34488C112.691 10.2709 113.884 11.5717 114.724 13.2252C115.563 14.9008 115.983 16.885 115.983 19.1559C115.983 21.6032 115.497 23.7418 114.503 25.4835C113.53 27.2472 112.116 28.526 110.283 29.3418C111.233 29.6504 112.006 30.3559 112.647 31.3922L113.751 33.0457C113.972 33.4205 114.105 33.7732 114.105 34.1481C114.105 34.611 113.928 35.0078 113.553 35.2945C113.177 35.5811 112.735 35.7575 112.249 35.7575C111.873 35.7575 111.52 35.6693 111.188 35.4929C110.879 35.3165 110.592 35.0519 110.371 34.7213L108.559 31.7228C108.272 31.2378 107.896 30.885 107.432 30.6646C106.968 30.4441 106.372 30.3118 105.621 30.3118C103.477 30.3118 101.643 29.8488 100.075 28.9669C98.506 28.0409 97.3129 26.7401 96.4733 25.0867C95.6337 23.389 95.2139 21.4047 95.2139 19.1559C95.2139 16.885 95.6558 14.9228 96.4733 13.2252C97.3129 11.5496 98.5281 10.2709 100.075 9.34488C101.643 8.4189 103.477 8 105.621 8ZM158.537 8.02205C159.068 8.02205 159.488 8.24252 159.863 8.70551L166.204 16.5543L172.523 8.70551C172.899 8.26457 173.363 8.04409 173.894 8.04409C174.357 8.04409 174.777 8.22047 175.153 8.59528C175.528 8.97008 175.705 9.36693 175.705 9.89606C175.705 10.2929 175.551 10.7118 175.241 11.0866L168.193 19.663V28.2394C168.193 28.8787 168.016 29.3637 167.641 29.7386C167.265 30.1134 166.801 30.2677 166.227 30.2677C165.63 30.2677 165.122 30.0913 164.746 29.7386C164.37 29.3858 164.193 28.9008 164.193 28.2394V19.663L157.19 11.0646C156.88 10.6898 156.726 10.2929 156.726 9.87401C156.726 9.38898 156.902 8.94803 157.278 8.57323C157.654 8.19843 158.096 8.02205 158.537 8.02205ZM135.316 9.96221C134.012 8.77165 132.201 8.19843 129.858 8.19843H122.236C121.639 8.19843 121.175 8.3748 120.822 8.68346C120.468 9.01418 120.291 9.47717 120.291 10.0724V28.1732C120.291 28.7905 120.468 29.2756 120.844 29.6504C121.175 30.0252 121.683 30.2016 122.28 30.2236C122.899 30.2236 123.385 30.0473 123.76 29.6724C124.136 29.3197 124.313 28.8346 124.313 28.1953V21.537H129.858C132.201 21.537 134.012 20.9637 135.316 19.7732C136.62 18.6047 137.282 16.9512 137.282 14.8567C137.282 12.7622 136.62 11.1087 135.316 9.96221ZM89.0936 8.02205C89.6902 8.02205 90.2205 8.19843 90.574 8.57323C90.9496 8.94803 91.1264 9.41103 91.1264 10.0063V28.1732C91.1264 28.7685 90.9496 29.2756 90.574 29.6504C90.1984 30.0252 89.7123 30.2016 89.0936 30.2016C88.5192 30.2016 88.0331 30.0252 87.6575 29.6504C87.2819 29.2756 87.1051 28.7905 87.1051 28.1732V10.0063C87.1051 9.41103 87.2819 8.94803 87.6575 8.57323C88.0331 8.19843 88.4971 8.02205 89.0936 8.02205ZM148.816 8.30866C148.44 8.11024 148.042 8 147.601 8C147.159 8 146.761 8.08819 146.385 8.30866C145.988 8.52913 145.7 8.85984 145.524 9.25669L136.951 27.6221C136.84 27.8867 136.774 28.1732 136.774 28.4378C136.774 28.9228 136.951 29.3418 137.349 29.6504C137.724 29.9591 138.188 30.1354 138.652 30.1354C139.006 30.1354 139.315 30.0472 139.602 29.8709C139.89 29.6945 140.11 29.4299 140.287 29.0551L142.165 24.9103H153.036L154.914 29.0551C155.069 29.4078 155.312 29.6945 155.599 29.8709C155.886 30.0472 156.218 30.1354 156.527 30.1354C157.035 30.1354 157.477 29.9591 157.852 29.6504C158.229 29.2977 158.427 28.9008 158.427 28.4378C158.427 28.1512 158.361 27.9087 158.272 27.6221L149.677 9.25669C149.479 8.8378 149.191 8.52913 148.816 8.30866ZM71.926 8.04409C72.5226 8.04409 73.0529 8.22047 73.4064 8.59528C73.782 8.97008 73.9587 9.43308 73.9587 10.0283V26.7622H82.642C83.8793 26.7622 84.5201 27.3134 84.5201 28.3937C84.5201 29.474 83.8793 30.0252 82.642 30.0252H71.8156C71.219 30.0252 70.755 29.8488 70.4236 29.5181C70.1143 29.2095 69.9375 28.7464 69.9375 28.1732V10.0283C69.9375 9.43308 70.1143 8.97008 70.4899 8.59528C70.8655 8.22047 71.3295 8.04409 71.926 8.04409ZM100.848 13.1811C101.975 11.8142 103.544 11.1307 105.576 11.1307C107.609 11.1307 109.156 11.7921 110.283 13.1811C111.409 14.5701 111.984 16.5102 111.984 19.1118C111.984 21.6693 111.409 23.6536 110.283 25.0426C109.156 26.4315 107.587 27.115 105.576 27.115C103.566 27.115 101.975 26.4315 100.848 25.0426C99.7213 23.6536 99.1468 21.7134 99.1468 19.1118C99.1468 16.5102 99.7213 14.5701 100.848 13.1811ZM147.601 12.652L143.513 21.8236H151.71L147.601 12.652ZM124.313 11.3071H129.35C132.09 11.3071 133.482 12.5197 133.482 14.9008C133.482 17.2819 132.09 18.4945 129.35 18.4945L124.313 18.4724V11.3071Z" fill-rule="evenodd" clip-rule="evenodd" fill="#4B4C4B"/>
-<path d="M183.66 29.5222L183.351 29.2576C182.599 28.6182 182.466 27.4498 183.151 26.7002L191.194 17.5285C191.835 16.7789 193.006 16.6466 193.757 17.33L194.066 17.5946C194.818 18.234 194.95 19.4026 194.266 20.1521L186.223 29.3238C185.582 30.0734 184.455 30.1616 183.66 29.5222Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint0_linear_1849_10697)"/>
-<path opacity="0.4" d="M190.111 19.1159L189.957 18.9395L188.72 20.3505L188.852 20.5048C190.973 22.6214 190.067 24.76 189.581 25.5096L189.757 25.3111C190.045 24.9805 190.487 24.4733 190.951 23.9221C191.437 23.0843 192.122 21.1001 190.111 19.1159Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint1_linear_1849_10697)"/>
-<path opacity="0.4" d="M192.763 21.8723L193.094 21.4975C193.116 21.4534 193.16 21.4093 193.182 21.3652C192.828 21.762 192.453 22.181 192.1 22.5999C192.365 22.3132 192.586 22.0707 192.763 21.8723Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint2_radial_1849_10697)"/>
-<path d="M194.309 17.8154L186.267 8.64373C185.625 7.89412 184.455 7.76184 183.704 8.44531L183.394 8.70987C182.643 9.34924 182.51 10.5178 183.196 11.2674L189.979 18.9398L190.133 19.1162C192.143 21.1225 191.459 23.1067 190.951 23.9445C191.348 23.4816 191.746 23.0185 192.121 22.5996C192.475 22.1808 192.851 21.7618 193.205 21.365C193.558 20.9681 193.889 20.5934 194.11 20.3508C194.884 19.6012 194.994 18.565 194.309 17.8154Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint3_linear_1849_10697)"/>
-<path d="M193.867 29.5222L193.558 29.2576C192.807 28.6182 192.675 27.4498 193.359 26.7002L201.402 17.5285C202.042 16.7789 203.213 16.6466 203.965 17.33L204.274 17.5946C205.025 18.234 205.157 19.4026 204.473 20.1521L196.43 29.3238C195.79 30.0734 194.663 30.1616 193.867 29.5222Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint4_linear_1849_10697)"/>
-<path opacity="0.4" d="M200.407 19.028L200.253 18.8516L199.016 20.2626L199.148 20.4169C201.269 22.5335 200.363 24.6721 199.877 25.4217L200.053 25.2232C200.341 24.8926 200.783 24.3854 201.247 23.8342C201.732 22.9964 202.418 21.0122 200.407 19.028Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint5_linear_1849_10697)"/>
-<path opacity="0.4" d="M202.948 21.8723L203.279 21.4975C203.301 21.4534 203.346 21.4093 203.368 21.3652C203.014 21.762 202.639 22.181 202.285 22.5999C202.55 22.3132 202.794 22.0707 202.948 21.8723Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint6_radial_1849_10697)"/>
-<path d="M204.495 17.8154L196.452 8.64373C195.811 7.89412 194.64 7.76184 193.889 8.44531L193.58 8.70987C192.828 9.34924 192.696 10.5178 193.381 11.2674L200.164 18.9398L200.318 19.1162C202.329 21.1225 201.644 23.1067 201.136 23.9445C201.534 23.4816 201.932 23.0185 202.307 22.5996C202.661 22.1808 203.036 21.7618 203.389 21.365C203.743 20.9681 204.075 20.5934 204.296 20.3508C205.069 19.6012 205.18 18.565 204.495 17.8154Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint7_linear_1849_10697)"/>
-<defs>
-<linearGradient id="paint0_linear_1849_10697" x1="186.172" y1="32.3849" x2="197.324" y2="26.966" gradientUnits="userSpaceOnUse">
-<stop stop-color="#1FADC3"/>
-<stop offset="0.7072" stop-color="#36B98F"/>
-</linearGradient>
-<linearGradient id="paint1_linear_1849_10697" x1="190.091" y1="23.7116" x2="192.177" y2="23.4072" gradientUnits="userSpaceOnUse">
-<stop stop-color="#123F06" stop-opacity="0.01"/>
-<stop offset="1" stop-color="#123F06"/>
-</linearGradient>
-<radialGradient id="paint2_radial_1849_10697" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(188.331 23.0185) scale(5.38712 6.14348)">
-<stop offset="0.4185" stop-color="#123F06" stop-opacity="0.01"/>
-<stop offset="1" stop-color="#123F06"/>
-</radialGradient>
-<linearGradient id="paint3_linear_1849_10697" x1="178.538" y1="20.1534" x2="192.068" y2="24.839" gradientUnits="userSpaceOnUse">
-<stop stop-color="#9FDB57"/>
-<stop offset="1" stop-color="#71CA5E"/>
-</linearGradient>
-<linearGradient id="paint4_linear_1849_10697" x1="196.37" y1="32.3905" x2="207.522" y2="26.9716" gradientUnits="userSpaceOnUse">
-<stop stop-color="#1FADC3"/>
-<stop offset="0.7072" stop-color="#36B98F"/>
-</linearGradient>
-<linearGradient id="paint5_linear_1849_10697" x1="200.387" y1="23.6237" x2="202.473" y2="23.3193" gradientUnits="userSpaceOnUse">
-<stop stop-color="#123F06" stop-opacity="0.01"/>
-<stop offset="1" stop-color="#123F06"/>
-</linearGradient>
-<radialGradient id="paint6_radial_1849_10697" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(198.525 23.0185) scale(5.38712 6.14348)">
-<stop offset="0.4185" stop-color="#123F06" stop-opacity="0.01"/>
-<stop offset="1" stop-color="#123F06"/>
-</radialGradient>
-<linearGradient id="paint7_linear_1849_10697" x1="188.73" y1="20.1574" x2="202.26" y2="24.843" gradientUnits="userSpaceOnUse">
-<stop stop-color="#9FDB57"/>
-<stop offset="1" stop-color="#71CA5E"/>
-</linearGradient>
-</defs>
-</svg></span></label>
+        <div class="dp-detail">
+          <div class="dp-detail__text">
+            <p class="dp-detail__label">Recipient code</p>
+            <p class="dp-detail__value">44831336</p>
+          </div>
+          <button type="button" class="dp-copy" aria-label="Copy recipient code"><span class="dp-copy__face"><svg class="dp-copy__icon" viewBox="15 15 18 18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M32.4727 18.6L29.4 15.5274C29.2333 15.3596 29.035 15.2267 28.8165 15.1362C28.5981 15.0456 28.3638 14.9994 28.1273 15H23.1C22.1455 15.001 21.2305 15.3806 20.5555 16.0555C19.8806 16.7304 19.501 17.6455 19.5 18.6H18.6C17.6455 18.601 16.7304 18.9806 16.0555 19.6555C15.3806 20.3304 15.001 21.2455 15 22.2V29.4C15.001 30.3545 15.3806 31.2696 16.0555 31.9445C16.7304 32.6193 17.6455 32.999 18.6 33H24.9C25.8545 32.999 26.7696 32.6193 27.4444 31.9445C28.1193 31.2696 28.499 30.3545 28.5 29.4H29.4C30.3545 29.399 31.2696 29.0194 31.9445 28.3445C32.6193 27.6696 32.999 26.7545 33 25.8V19.8727C32.9987 19.3955 32.8092 18.9382 32.4727 18.6ZM28.5 17.1727L30.8273 19.5H29.6386C29.3368 19.4997 29.0474 19.3797 28.8339 19.1664C28.6205 18.953 28.5004 18.6636 28.5 18.3618V17.1727ZM24.9 31.2H18.6C18.1228 31.1995 17.6652 31.0097 17.3278 30.6722C16.9903 30.3347 16.8005 29.8772 16.8 29.4V22.2C16.8005 21.7228 16.9903 21.2652 17.3278 20.9278C17.6652 20.5904 18.1228 20.4005 18.6 20.4H19.5V25.8C19.501 26.7545 19.8806 27.6696 20.5555 28.3445C21.2305 29.0194 22.1455 29.399 23.1 29.4H26.7C26.6995 29.8772 26.5097 30.3347 26.1722 30.6722C25.8347 31.0097 25.3772 31.1995 24.9 31.2ZM29.4 27.6H23.1C22.6228 27.5995 22.1653 27.4097 21.8278 27.0722C21.4904 26.7347 21.3005 26.2772 21.3 25.8V18.6C21.3005 18.1228 21.4904 17.6652 21.8278 17.3278C22.1653 16.9903 22.6228 16.8005 23.1 16.8H26.7V18.3618C26.701 19.1408 27.0109 19.8876 27.5618 20.4385C28.1128 20.9893 28.8596 21.2991 29.6386 21.3H31.2V25.8C31.1995 26.2772 31.0097 26.7347 30.6722 27.0722C30.3347 27.4097 29.8772 27.5995 29.4 27.6Z"/></svg><svg class="dp-copy__done" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg></span><span class="dp-copy__tip" aria-hidden="true">Copied</span></button>
         </div>
-      </fieldset>
-
-      <div class="dp-field dp-field--email">
-        <label class="dp-label" for="dp-email">Email: *</label>
-        <input class="dp-input" id="dp-email" type="email" autocomplete="email" required>
+        <div class="dp-detail">
+          <div class="dp-detail__text">
+            <p class="dp-detail__label">Recipient address</p>
+            <p class="dp-detail__value">UA 79053, Ukraine, Lviv region, Lviv, 12 Kovaleva St.</p>
+          </div>
+          <button type="button" class="dp-copy" aria-label="Copy recipient address"><span class="dp-copy__face"><svg class="dp-copy__icon" viewBox="15 15 18 18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M32.4727 18.6L29.4 15.5274C29.2333 15.3596 29.035 15.2267 28.8165 15.1362C28.5981 15.0456 28.3638 14.9994 28.1273 15H23.1C22.1455 15.001 21.2305 15.3806 20.5555 16.0555C19.8806 16.7304 19.501 17.6455 19.5 18.6H18.6C17.6455 18.601 16.7304 18.9806 16.0555 19.6555C15.3806 20.3304 15.001 21.2455 15 22.2V29.4C15.001 30.3545 15.3806 31.2696 16.0555 31.9445C16.7304 32.6193 17.6455 32.999 18.6 33H24.9C25.8545 32.999 26.7696 32.6193 27.4444 31.9445C28.1193 31.2696 28.499 30.3545 28.5 29.4H29.4C30.3545 29.399 31.2696 29.0194 31.9445 28.3445C32.6193 27.6696 32.999 26.7545 33 25.8V19.8727C32.9987 19.3955 32.8092 18.9382 32.4727 18.6ZM28.5 17.1727L30.8273 19.5H29.6386C29.3368 19.4997 29.0474 19.3797 28.8339 19.1664C28.6205 18.953 28.5004 18.6636 28.5 18.3618V17.1727ZM24.9 31.2H18.6C18.1228 31.1995 17.6652 31.0097 17.3278 30.6722C16.9903 30.3347 16.8005 29.8772 16.8 29.4V22.2C16.8005 21.7228 16.9903 21.2652 17.3278 20.9278C17.6652 20.5904 18.1228 20.4005 18.6 20.4H19.5V25.8C19.501 26.7545 19.8806 27.6696 20.5555 28.3445C21.2305 29.0194 22.1455 29.399 23.1 29.4H26.7C26.6995 29.8772 26.5097 30.3347 26.1722 30.6722C25.8347 31.0097 25.3772 31.1995 24.9 31.2ZM29.4 27.6H23.1C22.6228 27.5995 22.1653 27.4097 21.8278 27.0722C21.4904 26.7347 21.3005 26.2772 21.3 25.8V18.6C21.3005 18.1228 21.4904 17.6652 21.8278 17.3278C22.1653 16.9903 22.6228 16.8005 23.1 16.8H26.7V18.3618C26.701 19.1408 27.0109 19.8876 27.5618 20.4385C28.1128 20.9893 28.8596 21.2991 29.6386 21.3H31.2V25.8C31.1995 26.2772 31.0097 26.7347 30.6722 27.0722C30.3347 27.4097 29.8772 27.5995 29.4 27.6Z"/></svg><svg class="dp-copy__done" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg></span><span class="dp-copy__tip" aria-hidden="true">Copied</span></button>
+        </div>
+        <div class="dp-detail">
+          <div class="dp-detail__text">
+            <p class="dp-detail__label">Name of the bank</p>
+            <p class="dp-detail__value">JSC CB PRIVATBANK</p>
+          </div>
+          <button type="button" class="dp-copy" aria-label="Copy bank name"><span class="dp-copy__face"><svg class="dp-copy__icon" viewBox="15 15 18 18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M32.4727 18.6L29.4 15.5274C29.2333 15.3596 29.035 15.2267 28.8165 15.1362C28.5981 15.0456 28.3638 14.9994 28.1273 15H23.1C22.1455 15.001 21.2305 15.3806 20.5555 16.0555C19.8806 16.7304 19.501 17.6455 19.5 18.6H18.6C17.6455 18.601 16.7304 18.9806 16.0555 19.6555C15.3806 20.3304 15.001 21.2455 15 22.2V29.4C15.001 30.3545 15.3806 31.2696 16.0555 31.9445C16.7304 32.6193 17.6455 32.999 18.6 33H24.9C25.8545 32.999 26.7696 32.6193 27.4444 31.9445C28.1193 31.2696 28.499 30.3545 28.5 29.4H29.4C30.3545 29.399 31.2696 29.0194 31.9445 28.3445C32.6193 27.6696 32.999 26.7545 33 25.8V19.8727C32.9987 19.3955 32.8092 18.9382 32.4727 18.6ZM28.5 17.1727L30.8273 19.5H29.6386C29.3368 19.4997 29.0474 19.3797 28.8339 19.1664C28.6205 18.953 28.5004 18.6636 28.5 18.3618V17.1727ZM24.9 31.2H18.6C18.1228 31.1995 17.6652 31.0097 17.3278 30.6722C16.9903 30.3347 16.8005 29.8772 16.8 29.4V22.2C16.8005 21.7228 16.9903 21.2652 17.3278 20.9278C17.6652 20.5904 18.1228 20.4005 18.6 20.4H19.5V25.8C19.501 26.7545 19.8806 27.6696 20.5555 28.3445C21.2305 29.0194 22.1455 29.399 23.1 29.4H26.7C26.6995 29.8772 26.5097 30.3347 26.1722 30.6722C25.8347 31.0097 25.3772 31.1995 24.9 31.2ZM29.4 27.6H23.1C22.6228 27.5995 22.1653 27.4097 21.8278 27.0722C21.4904 26.7347 21.3005 26.2772 21.3 25.8V18.6C21.3005 18.1228 21.4904 17.6652 21.8278 17.3278C22.1653 16.9903 22.6228 16.8005 23.1 16.8H26.7V18.3618C26.701 19.1408 27.0109 19.8876 27.5618 20.4385C28.1128 20.9893 28.8596 21.2991 29.6386 21.3H31.2V25.8C31.1995 26.2772 31.0097 26.7347 30.6722 27.0722C30.3347 27.4097 29.8772 27.5995 29.4 27.6Z"/></svg><svg class="dp-copy__done" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg></span><span class="dp-copy__tip" aria-hidden="true">Copied</span></button>
+        </div>
+        <div class="dp-detail">
+          <div class="dp-detail__text">
+            <p class="dp-detail__label">Address of the bank</p>
+            <p class="dp-detail__value">1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</p>
+          </div>
+          <button type="button" class="dp-copy" aria-label="Copy bank address"><span class="dp-copy__face"><svg class="dp-copy__icon" viewBox="15 15 18 18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M32.4727 18.6L29.4 15.5274C29.2333 15.3596 29.035 15.2267 28.8165 15.1362C28.5981 15.0456 28.3638 14.9994 28.1273 15H23.1C22.1455 15.001 21.2305 15.3806 20.5555 16.0555C19.8806 16.7304 19.501 17.6455 19.5 18.6H18.6C17.6455 18.601 16.7304 18.9806 16.0555 19.6555C15.3806 20.3304 15.001 21.2455 15 22.2V29.4C15.001 30.3545 15.3806 31.2696 16.0555 31.9445C16.7304 32.6193 17.6455 32.999 18.6 33H24.9C25.8545 32.999 26.7696 32.6193 27.4444 31.9445C28.1193 31.2696 28.499 30.3545 28.5 29.4H29.4C30.3545 29.399 31.2696 29.0194 31.9445 28.3445C32.6193 27.6696 32.999 26.7545 33 25.8V19.8727C32.9987 19.3955 32.8092 18.9382 32.4727 18.6ZM28.5 17.1727L30.8273 19.5H29.6386C29.3368 19.4997 29.0474 19.3797 28.8339 19.1664C28.6205 18.953 28.5004 18.6636 28.5 18.3618V17.1727ZM24.9 31.2H18.6C18.1228 31.1995 17.6652 31.0097 17.3278 30.6722C16.9903 30.3347 16.8005 29.8772 16.8 29.4V22.2C16.8005 21.7228 16.9903 21.2652 17.3278 20.9278C17.6652 20.5904 18.1228 20.4005 18.6 20.4H19.5V25.8C19.501 26.7545 19.8806 27.6696 20.5555 28.3445C21.2305 29.0194 22.1455 29.399 23.1 29.4H26.7C26.6995 29.8772 26.5097 30.3347 26.1722 30.6722C25.8347 31.0097 25.3772 31.1995 24.9 31.2ZM29.4 27.6H23.1C22.6228 27.5995 22.1653 27.4097 21.8278 27.0722C21.4904 26.7347 21.3005 26.2772 21.3 25.8V18.6C21.3005 18.1228 21.4904 17.6652 21.8278 17.3278C22.1653 16.9903 22.6228 16.8005 23.1 16.8H26.7V18.3618C26.701 19.1408 27.0109 19.8876 27.5618 20.4385C28.1128 20.9893 28.8596 21.2991 29.6386 21.3H31.2V25.8C31.1995 26.2772 31.0097 26.7347 30.6722 27.0722C30.3347 27.4097 29.8772 27.5995 29.4 27.6Z"/></svg><svg class="dp-copy__done" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg></span><span class="dp-copy__tip" aria-hidden="true">Copied</span></button>
+        </div>
+        <div class="dp-detail">
+          <div class="dp-detail__text">
+            <p class="dp-detail__label">Bank SWIFT Code</p>
+            <p class="dp-detail__value">PBANUA2X</p>
+          </div>
+          <button type="button" class="dp-copy" aria-label="Copy SWIFT code"><span class="dp-copy__face"><svg class="dp-copy__icon" viewBox="15 15 18 18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M32.4727 18.6L29.4 15.5274C29.2333 15.3596 29.035 15.2267 28.8165 15.1362C28.5981 15.0456 28.3638 14.9994 28.1273 15H23.1C22.1455 15.001 21.2305 15.3806 20.5555 16.0555C19.8806 16.7304 19.501 17.6455 19.5 18.6H18.6C17.6455 18.601 16.7304 18.9806 16.0555 19.6555C15.3806 20.3304 15.001 21.2455 15 22.2V29.4C15.001 30.3545 15.3806 31.2696 16.0555 31.9445C16.7304 32.6193 17.6455 32.999 18.6 33H24.9C25.8545 32.999 26.7696 32.6193 27.4444 31.9445C28.1193 31.2696 28.499 30.3545 28.5 29.4H29.4C30.3545 29.399 31.2696 29.0194 31.9445 28.3445C32.6193 27.6696 32.999 26.7545 33 25.8V19.8727C32.9987 19.3955 32.8092 18.9382 32.4727 18.6ZM28.5 17.1727L30.8273 19.5H29.6386C29.3368 19.4997 29.0474 19.3797 28.8339 19.1664C28.6205 18.953 28.5004 18.6636 28.5 18.3618V17.1727ZM24.9 31.2H18.6C18.1228 31.1995 17.6652 31.0097 17.3278 30.6722C16.9903 30.3347 16.8005 29.8772 16.8 29.4V22.2C16.8005 21.7228 16.9903 21.2652 17.3278 20.9278C17.6652 20.5904 18.1228 20.4005 18.6 20.4H19.5V25.8C19.501 26.7545 19.8806 27.6696 20.5555 28.3445C21.2305 29.0194 22.1455 29.399 23.1 29.4H26.7C26.6995 29.8772 26.5097 30.3347 26.1722 30.6722C25.8347 31.0097 25.3772 31.1995 24.9 31.2ZM29.4 27.6H23.1C22.6228 27.5995 22.1653 27.4097 21.8278 27.0722C21.4904 26.7347 21.3005 26.2772 21.3 25.8V18.6C21.3005 18.1228 21.4904 17.6652 21.8278 17.3278C22.1653 16.9903 22.6228 16.8005 23.1 16.8H26.7V18.3618C26.701 19.1408 27.0109 19.8876 27.5618 20.4385C28.1128 20.9893 28.8596 21.2991 29.6386 21.3H31.2V25.8C31.1995 26.2772 31.0097 26.7347 30.6722 27.0722C30.3347 27.4097 29.8772 27.5995 29.4 27.6Z"/></svg><svg class="dp-copy__done" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg></span><span class="dp-copy__tip" aria-hidden="true">Copied</span></button>
+        </div>
       </div>
-
-      <label class="dp-check">
-        <input type="checkbox" id="dp-terms" required>
-        <span class="dp-check__box"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3 3 6-7"/></svg></span>
-        <span class="dp-check__text">I have read and agree to the website terms and conditions <span class="dp-req">*</span></span>
-      </label>
-
-      <p class="dp-note">Your data will be used to process your donation and for other purposes described in our <a href="https://dzygaspaw.com/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</p>
-
-      <button type="submit" class="dp-submit">Donate now</button>
-    </form>
+      <p class="dp-sr-status" role="status" aria-live="polite"></p>
+    </div>
   </div>
 </div>
 <script src="assets/donate-popup.js"></script>
