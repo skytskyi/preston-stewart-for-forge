@@ -215,4 +215,10 @@ html.dp-lock, html.dp-lock body { overflow: hidden; }
   color: inherit !important; font: inherit !important; letter-spacing: inherit !important; text-transform: none !important;
 }
 .elementor-widget-button .elementor-button.dp-btn-secondary .elementor-button-content-wrapper { display: inline-flex; align-items: center; gap: 8px; }
-.dp-ext-icon { width: 16px; height: 16px; flex: 0 0 16px; }
+.elementor-button.dp-btn-secondary svg.dp-ext-icon,
+.elementor-button.dp-btn-secondary:hover svg.dp-ext-icon {
+  width: 16px !important; height: 16px !important; flex: 0 0 16px;
+  fill: none !important; stroke: currentColor !important; stroke-width: 1.8 !important;
+  stroke-linecap: round; stroke-linejoin: round; transform: none !important;
+}
+.elementor-button.dp-btn-secondary svg.dp-ext-icon path { fill: none !important; stroke: currentColor !important; }
