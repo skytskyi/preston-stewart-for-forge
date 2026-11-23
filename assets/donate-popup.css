@@ -1,0 +1,153 @@
+/* Quick Donation popup — from Figma "Donations — DP style" (node 1849:10639) */
+.dp-modal {
+  --dp-bg: #fcf7f0;
+  --dp-track: #ede1d3;
+  --dp-ink: #151515;
+  --dp-text: #1e1e1e;
+  --dp-muted: #6b6560;
+  --dp-line: #dac6b0;
+  --dp-accent: #eb6d6e;
+  --dp-link: #55161a;
+  --dp-body: "Road UA", "RoadUA", "Noto Sans", system-ui, sans-serif;
+  position: fixed; inset: 0; z-index: 100000;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+  background: rgba(21, 21, 21, .55);
+  opacity: 0; visibility: hidden;
+  transition: opacity .2s ease, visibility 0s linear .2s;
+}
+.dp-modal.is-open { opacity: 1; visibility: visible; transition: opacity .2s ease; }
+.dp-modal *, .dp-modal *::before, .dp-modal *::after { box-sizing: border-box; }
+
+.dp-modal .dp-dialog {
+  position: relative;
+  width: 100%; max-width: 639px;               /* 559 content + 2 × 40 padding */
+  max-height: calc(100vh - 48px); max-height: calc(100dvh - 48px);
+  overflow-y: auto; overscroll-behavior: contain;
+  padding: 40px;
+  background: var(--dp-bg);
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(21, 21, 21, .25);
+  font-family: var(--dp-body); color: var(--dp-text);
+  transform: translateY(12px) scale(.98); transition: transform .2s ease;
+}
+.dp-modal.is-open .dp-dialog { transform: none; }
+
+.dp-modal .dp-close {
+  position: absolute; top: 16px; right: 16px;
+  width: 40px; height: 40px; padding: 0;
+  display: grid; place-items: center;
+  background: transparent; border: 0; border-radius: 8px;
+  color: var(--dp-ink); cursor: pointer;
+}
+.dp-modal .dp-close:hover { background: var(--dp-track); }
+.dp-modal .dp-close:focus-visible { outline: 2px solid var(--dp-ink); outline-offset: 2px; }
+.dp-modal .dp-close svg { width: 24px; height: 24px; }
+
+.dp-modal .dp-form { display: flex; flex-direction: column; gap: 24px; margin: 0; }
+
+.dp-modal .dp-title {
+  margin: 0; padding: 0 32px;
+  font-family: "T1Robit", "T1 Robit", var(--dp-body);
+  font-weight: 700; font-size: 24px; line-height: 1.2; letter-spacing: 0;
+  text-align: center; color: var(--dp-text);
+}
+
+.dp-modal .dp-field { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; border: 0; min-width: 0; }
+.dp-modal .dp-field--email { gap: 4px; }
+.dp-modal .dp-label {
+  padding: 0; margin: 0;
+  font-size: 15px; font-weight: 400; line-height: 1.2; color: var(--dp-ink);
+}
+
+/* Segment control */
+.dp-modal .dp-seg {
+  display: flex; padding: 4px; gap: 0;
+  background: var(--dp-track); border-radius: 12px;
+}
+.dp-modal .dp-seg__opt { position: relative; flex: 1 1 0; min-width: 0; display: flex; }
+.dp-modal .dp-seg__opt input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.dp-modal .dp-seg__opt span {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  min-height: 36px; padding: 8px 12px;
+  border-radius: 8px; cursor: pointer; user-select: none;
+  font-size: 16px; font-weight: 500; line-height: 1.25; color: var(--dp-muted);
+  white-space: nowrap; transition: background-color .15s ease, color .15s ease;
+}
+.dp-modal .dp-seg__opt span:hover { color: var(--dp-ink); }
+.dp-modal .dp-seg__opt input:checked + span { background: #fff; color: var(--dp-ink); font-weight: 700; }
+.dp-modal .dp-seg__opt input:focus-visible + span { outline: 2px solid var(--dp-ink); outline-offset: -2px; }
+
+.dp-modal .dp-seg--services .dp-seg__opt span { min-height: 50px; padding: 0; }
+.dp-modal .dp-logo { display: block; width: auto; max-width: 86%; height: 34px; }
+.dp-modal .dp-logo--liqpay { height: 28px; }
+.dp-modal .dp-seg--services input:not(:checked) + span .dp-logo { opacity: .85; }
+
+/* Inputs */
+.dp-modal .dp-input {
+  width: 100%; height: 48px; padding: 0 16px; margin: 0;
+  background: #fff; border: 1px solid var(--dp-line); border-radius: 12px;
+  font: 400 16px/1.25 var(--dp-body); color: var(--dp-ink);
+  outline: none; box-shadow: none; transition: border-color .15s ease;
+  -webkit-appearance: none; appearance: none;
+}
+.dp-modal .dp-input:focus { border-color: var(--dp-ink); }
+.dp-modal .dp-input.is-invalid, .dp-modal .dp-check.is-invalid .dp-check__box { border-color: var(--dp-accent); }
+
+.dp-modal .dp-other { display: none; position: relative; }
+.dp-modal .dp-other.is-visible { display: block; }
+.dp-modal .dp-other__cur {
+  position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  font: 500 16px/1 var(--dp-body); color: var(--dp-muted); pointer-events: none;
+}
+.dp-modal .dp-other .dp-input { padding-left: 34px; }
+.dp-modal .dp-other .dp-input::-webkit-outer-spin-button,
+.dp-modal .dp-other .dp-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.dp-modal .dp-other .dp-input { -moz-appearance: textfield; }
+
+/* Checkbox */
+.dp-modal .dp-check { display: flex; align-items: flex-start; gap: 16px; cursor: pointer; margin: 0; }
+.dp-modal .dp-check input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.dp-modal .dp-check__box {
+  flex: 0 0 20px; width: 20px; height: 20px; margin-top: -1px;
+  display: grid; place-items: center;
+  background: #fff; border: 1.5px solid var(--dp-ink); border-radius: 4px;
+  transition: background-color .15s ease;
+}
+.dp-modal .dp-check__box svg { width: 14px; height: 14px; opacity: 0; color: #fff; }
+.dp-modal .dp-check input:checked + .dp-check__box { background: var(--dp-ink); }
+.dp-modal .dp-check input:checked + .dp-check__box svg { opacity: 1; }
+.dp-modal .dp-check input:focus-visible + .dp-check__box { outline: 2px solid var(--dp-ink); outline-offset: 2px; }
+.dp-modal .dp-check__text { font-size: 15px; line-height: 1.2; color: var(--dp-text); }
+.dp-modal .dp-req { color: var(--dp-accent); }
+
+.dp-modal .dp-note { margin: 0; font-size: 15px; line-height: 1.2; color: var(--dp-text); }
+.dp-modal .dp-note a { color: var(--dp-link); text-decoration: underline; font-family: inherit; font-size: inherit; }
+.dp-modal .dp-note a:hover { color: var(--dp-accent); }
+
+.dp-modal .dp-submit {
+  width: 100%; height: 48px; padding: 12px 32px; margin: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--dp-accent); border: 0; border-radius: 12px;
+  font: 700 16px/1.25 var(--dp-body); color: var(--dp-ink);
+  cursor: pointer; transition: filter .15s ease;
+}
+.dp-modal .dp-submit:hover { filter: brightness(.95); background: var(--dp-accent); color: var(--dp-ink); }
+.dp-modal .dp-submit:focus-visible { outline: 2px solid var(--dp-ink); outline-offset: 2px; }
+
+html.dp-lock, html.dp-lock body { overflow: hidden; }
+
+@media (max-width: 600px) {
+  .dp-modal { padding: 12px; align-items: flex-end; }
+  .dp-modal .dp-dialog { padding: 28px 20px 24px; border-radius: 16px; max-height: calc(100dvh - 24px); }
+  .dp-modal .dp-close { top: 10px; right: 10px; }
+  .dp-modal .dp-form { gap: 20px; }
+  .dp-modal .dp-seg__opt span { padding: 8px 4px; font-size: 15px; }
+  .dp-modal .dp-seg--services .dp-seg__opt span { padding: 0; min-height: 44px; }
+  .dp-modal .dp-logo { height: 26px; }
+  .dp-modal .dp-logo--liqpay { height: 21px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dp-modal, .dp-modal .dp-dialog { transition: none; }
+}
