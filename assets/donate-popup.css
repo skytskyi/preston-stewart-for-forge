@@ -49,8 +49,18 @@
 .dp-modal .dp-title {
   margin: 0; padding: 0 32px;
   font-family: "T1Robit", "T1 Robit", var(--dp-body);
-  font-weight: 700; font-size: 24px; line-height: 1.2; letter-spacing: 0;
+  font-weight: 700; font-size: 22px; line-height: 1.2; letter-spacing: 0;
   text-align: center; color: var(--dp-text);
+  text-wrap: balance;
+}
+.dp-modal .dp-subtitle {
+  display: block; margin-top: 8px;
+  font: 400 15px/1.2 var(--dp-body); color: var(--dp-muted);
+}
+.dp-modal .dp-detail--accent {
+  padding: 12px 0 12px 16px; margin: -4px 0;
+  background: #fff; border: 1px solid var(--dp-line); border-radius: 12px;
+  padding-right: 4px; gap: 16px;
 }
 
 .dp-modal .dp-field { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; border: 0; min-width: 0; }
@@ -142,6 +152,7 @@ html.dp-lock, html.dp-lock body { overflow: hidden; }
   .dp-modal .dp-dialog { padding: 28px 20px 24px; border-radius: 16px; max-height: calc(100dvh - 24px); }
   .dp-modal .dp-close { top: 10px; right: 10px; }
   .dp-modal .dp-form { gap: 20px; }
+  .dp-modal .dp-title { font-size: 19px; padding: 0 36px; }
   .dp-modal .dp-seg__opt span { padding: 8px 4px; font-size: 15px; }
   .dp-modal .dp-seg--services .dp-seg__opt span { padding: 0; min-height: 44px; }
   .dp-modal .dp-logo { height: 26px; }
